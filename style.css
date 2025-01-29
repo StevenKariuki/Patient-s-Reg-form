@@ -1,0 +1,212 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    border: solid blue 3px;
+}
+img{
+    width: 100%;
+}
+
+.heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+/* Form container styles */
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header with background image */
+.form-header {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.form-header img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.form-header h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 20px 20px 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Form group styles */
+form {
+    padding: 20px;
+    z-index: 3;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+label span {
+    color: red;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Row and column styles */
+.row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+}
+.first-name{
+    flex: 1;
+    margin-right: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+.last-name{
+    flex: 1;
+    margin-left: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.street-address{
+    flex: 1;
+    margin-right: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.address-line-2{
+    flex: 1;
+    margin-left: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+
+.city{
+    flex: 1;
+    margin-right: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.state{
+    flex: 1;
+    margin-left: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.zip-code{
+    flex: 1;
+    margin-right: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.phone-number{
+    flex: 1;
+    margin-left: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.email{
+    flex: 1;
+    margin-right: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.ssn{
+    flex: 1;
+    margin-left: 10px;
+    width: 75%;
+    border:solid 1px;
+}
+
+.dob{
+    flex: 1;
+    margin-right: 10px;
+    width: 75%;
+    border:solid 1px
+}
+
+/* Marital status radios */
+.marital-status {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 15px;
+}
+
+.marital-status label {
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.marital-status input {
+    margin-right: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration OPEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            
+             <img src="images/free-medical-background-01.png" alt="Background Image">
+            <h1 class="heading"><b>Patient Registration</b></h1>
+        </div>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="first-name" ><b>First Name</b> <span>*</span></label>
+                        <input type="text" id="first-name" name="first-name" required class="first-name">
+                    </div>
+                    <div class="col">
+                        <label for="last-name"><b>Last Name</b> <span>*</span></label>
+                        <input type="text" id="last-name" name="last-name" required class="last-name">
+                    </div>
+                </div>
+
+                <label for="street-address"><b>Street Address</b> <span>*</span></label>
+                <input type="text" id="street-address" name="street-address" required class="street-address">
+
+                <label for="address-line-2"><b>Address Line 2</b></label>
+                <input type="text" id="address-line-2" name="address-line-2" class="address-line-2">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="city"><b>City</b> <span>*</span></label>
+                        <input type="text" id="city" name="city" required class="city">
+                    </div>
+                    <div class="col">
+                        <label for="state"><b>State</b> <span>*</span></label>
+                        <select id="state" name="state" required class="state">
+                            <option value="">Kenya</option>
+                            <option value="NY">Nigeria</option>
+                            <option value="CA">Uganda</option>
+                            <option value="TX">Tanzania</option>
+                            <option value="TX">Rwanda</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="zip-code"><b>Zip Code</b> <span>*</span></label>
+                        <input type="text" id="zip-code" name="zip-code" required class="zip-code">
+                    </div>
+                    <div class="col">
+                        <label for="phone-number"><b>Phone Number</b> <span>*</span></label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="(___) ___-____" required class="phone-number">
+                    </div>
+                </div>
+
+                <label for="email"><b>Email Address</b> <span>*</span></label>
+                <input type="email" id="email" name="email" required class="email">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="ssn"><b>Social Security Number</b> <span>*</span> <i class="fas fa-question-circle"></i></label>
+                        <input type="text" id="ssn" name="ssn" placeholder="XXX-XX-XXXX" required class="ssn">
+                    </div>
+                    <div class="col">
+                        <label for="dob"><b>Date of Birth</b> <span>*</span></label>
+                        <input type="date" id="dob" name="dob" required class="dob">
+                    </div>
+                </div>
+
+                <label><b>Marital Status </b><span>*</span></label>
+                <div class="marital-status">
+                    <label><input type="radio" name="marital-status" value="Single" required> Single</label>
+                    <label><input type="radio" name="marital-status" value="Married" required> Married</label>
+                    <label><input type="radio" name="marital-status" value="Divorced" required> Divorced</label>
+                    <label><input type="radio" name="marital-status" value="Widowed" required> Widowed</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
